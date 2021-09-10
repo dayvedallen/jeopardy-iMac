@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeopardy Game</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+<header style="display: block">
+  <!-- All pages -->
+  <h1> Jeopardy Game </h1>
+  Instructions:
+  <p>responsd in the textbox</p>
+  <h1>Instrucitons</h1>
+  <p>type answer to clue in box. hit submit </p>
+  If youre wrong game start s over .sorry.
+   thats the way were playing the game! 
+</header>
+
+
+
+<div class="screen screen--game-welcome"
+ style="display: block">
+</div>>
+
+
+
+
+ 
+
+<div class="screen screen--game-on" style="display: none">
+  <h1>Score:<span id="current-score"></span></h1>
+
+     <h2>Score: <span>00</span></h2>
+  </div>
+  <section class="score"></section>
+  <span id="score">${state}</span>
+
+  
+gameModel.game.state 
+game.quesions 
+game.clues 
+user.responses 
+
+</div>
+
+<div class="screen screen--game-on" style="display: none">
+
+</div>
+
+
+
+<!-- div for question ? aka clue  -->
+<div id="question"></div>
+
+
+
+
+
+<div class="container"></div>
+
+
+<div id="answer-form">
+  <div id="answer-input"><label for="answer">Type in your answer</label>
+     <input id="answer" name="answer" spellcheck="false" type="text" autocapitalize="off" autocomplete="off" autocorrect="off"></div>
+  <button id="submit-btn">SUBMIT</button></div>
+  <div id="answer"></div>
+
+  <input name="usersAnswer" type="text" alt="submit Button" id="usersAnswer">
+  <button id="submitAnswer" type="submit" value="submit">Submit</button>
+  <button id="submit" type="button">Submit Answer</button>
+
+  <div class="screen screen--game-over-u-won" style="display: none">
+
+  </div>
+  
+  <div class="screen screen--game-over-u-lost" style="display: none">
+    toggle class 
+  </div>
+  
+
+<script src="./code.js"></script>
+</body>
+
+</html>
