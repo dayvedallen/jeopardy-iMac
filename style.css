@@ -1,6 +1,70 @@
-body {
-  background: #130081;
-  color: white; 
-  background: #03157f
+@import url("https://fonts.googleapis.com/css?family=Oswald|Raleway:400,700");
 
+body {
+  
+  font-family: Korinna,serif;
+  color: white; 
+  background: gray;
+  text-align: center;
+  font-size: 2em; 
+  font-weight: 100;
+  line-height: normal;;
+  margin: 0;
+  background-color: #110075; 
+
+  
+}
+
+h1 {
+  color: gold;
+  margin-top: 0;
+  font-size: 40px;
+  font-family: "", sans-serif;
+}
+
+.clue {
+  font-family: Korinna,serif;
+  font-size: 1.6em;
+  color: white; 
+  box-shadow: 0em 0.3em 1em #020202;
+  /* display: flex; */
+  line-height: 1.5; 
+  align-items: center;
+  text-transform: uppercase; 
+  padding: 0 1em; 
+}
+
+screen--game-welcome {
+  display: block;
+}
+
+screen--game-on {
+  display: none;
+}
+
+screen--game-over {
+  display: none;
+}
+
+screen--game-over-u-lost {
+display: none;
+}
+
+screen--game-over-u-won {
+display: none;
+}
+
+header {
+  height: 12.5em;
+  align-items: left;
+  line-height: 1;
+  justify-content: center; 
+}
+ 
+screen {
+  height: 50em; 
+  font-size: 0.625rem;
+  padding:  0 1em;
+
+  
 }

@@ -1,105 +1,42 @@
-// get cat id. to use as query para . api/clues. 100 quesiton in cateogry . randomize
+const BASE_JSERVICE = 'https://jservice.io'
+const CLUE = `${BASE_JSERVICE}/api/clue`
+let clueApiURL = `${BASE_JSERVICE}${CLUE}`
+let scoreDiv = document.getElementById('#score')
+let cluesResponseArray = [];
+let randomClue;  
 
-// Your program will follow these general steps:
+// get random quesiton 
+randomQuestion = function() { 
+  fetch(randomAPIURL)
+}
 
-// Allow the user to respond to the question
-// Determine if the user's answer was correct
-// A correct answer awards one (1) point and continues the game
-// An incorrect answer resets the game and resets the score to zero (0)
-// Keep track of and display a user's score
+// getAclue(clue);
 
-let score = docuyment.getElementById('current-score'); 
-let submitAnswer  = document.getElementById('submitAnswer')
-let usersAnswerInput = document.getElemetnById('usersAnswerInput')
-
-document.addEventListener("document-load", fetchData); 
-
-
-let random = (Math.floor() * questionsArray.length);
-
-// 1.0  Use fetch to pull questions from the API
-
-function fetchData() {
-  fetch("https://jservice.io/api/random") 
-  .then((response) => { return response.json()})
-  .then(data => { 
-      fetch("https://jservice.io/api/clues?category=" + data[0].category_id)
-      .then((response) => response.json())
-      .then((data) => {
-          console.log('Success:',data);
-          questionsArray = data;
-          nextQuestion(questionsArray);
-      });
-  });   
+function getAclue(clue) {
+  // return  clue = object arrray promise 
+  console.log('get a clue')
+  console.log('api url', clue)
+//  let request = 'https: //jservice.io/api/clues/?cateogy=5'
+ let getRandomClue  = 'https: //jservice.io/api/random/'
+// /?cateogy=5'
 }
 
 
 
-// 2.0 Present a single question to the user
-
-
-function randomizeQuestions( questionsArray ) {
-  
-}
-function getQuestionsLength( questionsArray ) {
-
-}
-
-function showQuestions() {
-  question.show() 
-  question [index] 
-}  
-function nextQuestion(questionsArray) {
-
-
-  function questionCorrect() {
-    score++
-    nextQuestion()
+function cluesRequest() {
+  let request = 'https: //jservice.io/api/clues/?cateogy=5'
+  fetch(request) {
 
   }
 
 
 
-  function questionIncorrect() {
-    gameover() 
-    restart()
-  }
+  // // GET /api/random 
+  fetch(`https://restcountries.eu/rest/v2/name/${country}`)
+
+  const BASE_CLUES = BASE + Clues
 
 
-  function restart() {
-    goto('welcome')
+  jservice.io / api / clues /
 
-  }
-
-
-currentQuestion = questions. getRandom 
-pop  
-splice. 
-
-
-
-
-let model = {
-
-  state: null; 
-
-  questionsArray: [];
-
-
-}
-
-let state = {
-  username: null,
-  selectedCategory: null,
-  categoriesWithTodoItems: {
-      "Personal": [
-          { isFinished: false, text: "Find a good book to read" },
-          { isFinished: false, text: "Pack the bag for my next travel" }
-      ],
-      "Kenzie": [
-          { isFinished: true, text: "Prepare for the demo" },
-          { isFinished: false, text: "Finish the todo app" },
-      ]
-  }
-}
-
+[{"id":59937,"answer":"Yiddish","question":"To kvell","value":800,"airdate":"2004-04-23T12:00:00.000Z","created_at":"2014-02-11T23:23:37.606Z","updated_at":"2014-02-11T23:23:37.606Z","category_id":7669,"game_id":null,"invalid_count":null,"category":{"id":7669,"title":"from what language","created_at":"2014-02-11T23:23:37.007Z","updated_at":"2014-02-11T23:23:37.007Z","clues_count":5}}]
